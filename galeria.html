@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/estilos.css">
   <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="css/lightbox.css" rel="stylesheet" />
+
   <title>Pulseras Rojas</title>
 </head>
 <body>
@@ -13,7 +19,7 @@
       <div class="logo"> 
 
 
-        <a href="index.html"><img src="imagenes/Logo.jpg" alt="Logo de Pulseras Rojas"></a>
+        <a href="index.html"><img src="imagenes/logo.jpg" alt="Logo de Pulseras Rojas"></a>
         <a href="#"><h2 class="nombre-puleras">Pulseras Rojas</h2></a>
       </div>
 
@@ -23,7 +29,7 @@
         
 
        <ul class="encabezado">
-         <li><a href="index.html">La Serie</a></li>
+         <li><a class="la-serie" href="index.html">La Serie</a></li>
          <li><a href="personajes.html">Personajes</a>
            <ul class ="encabezado-vertical">
               <li><a href="personajes.html#Lleo">Lleo</a></li>
@@ -55,37 +61,40 @@
     <article>
       
       <div>
-        <a href="#"> <img  src="imagenes/galeria/benito-lleo.jpg" alt="el señor benito y lleo de niño"> </a>
-        <a href="#"> <img  src="imagenes/galeria/lleo-ignasi.jpg" alt="lleo e ignasi al conocerse"> </a>
-        <a href="#"> <img  src="imagenes/galeria/lleo-jordi-quimio.jpg" alt="jordi acompañando a lleo en su quimio"> </a>
-        <a href="#"> <img src="imagenes/galeria/jordi-cris.jpg" alt="jordi acompañado a cristina despues de pesarse"> </a>
-        <a href="#"> <img  src="imagenes/galeria/ignasi-operacion.jpg" alt="Ignasi despidiendose de sus padres antes de su cirujia"> </a>
-        <a href="#"> <img  src="imagenes/galeria/lleo-roger.jpg" alt="lleo y roger apostando para comprar su protesis soñada"> </a>
 
-        <a href="#"> <img  src="imagenes/galeria/lleo-y-cristina.jpg" alt="cristina bailando con lleo por su cumpleños"> </a>
-        <a href="#"> <img  src="imagenes/galeria/pulseras-mural.jpg" alt="mural de los pulseras para destacar en el hospital"> </a>
-        <a href="#"> <img  src="imagenes/galeria/pulseras-juego.jpg" alt="los pulseras jugando a donde les gustaria estar"> </a>
-        <a href="#"> <img src="imagenes/galeria/pre-viaje.jpg" alt="los pulseras saliendo del hospital para viajar juntos"> </a>
-        <a href="#"> <img  src="imagenes/galeria/pulseras-camioneta.jpg" alt="los pulseras despertandose de una noche de fiesta juntos"> </a>
-        <a href="#"> <img  src="imagenes/galeria/pulseras-viaje.jpg" alt="los pulseras acompañando a lleo en su viaje"> </a>
+       
+
+        <a class="example-image-link"  href="imagenes/galeria/benito-lleo.jpg" data-lightbox="benito-lleo" data-title="El señor benito acompañando a Lleo luego del fallecimiento de su madre." >  <img class="example-image" src="imagenes/galeria/benito-lleo.jpg" alt="el señor benito y lleo de niño"> </a>
+
+        <a class="example-image-link" href="imagenes/galeria/lleo-ignasi.jpg" data-lightbox="lleo-ignasi" data-title="Lleo e Ignasi al conocerse." > <img  src="imagenes/galeria/lleo-ignasi.jpg" alt="lleo e ignasi al conocerse"> </a>
+
+        <a  class="example-image-link" href="imagenes/galeria/lleo-jordi-quimio.jpg" data-lightbox="lleo-jordi" data-title="Jordi acompañando a Lleo en su quimio." >  <img  src="imagenes/galeria/lleo-jordi-quimio.jpg" alt="jordi acompañando a lleo en su quimio"> </a>
+
+        <a class="example-image-link"  href="imagenes/galeria/jordi-cris.jpg" data-lightbox="jordi-cris" data-title="Jordi acompañando a Cristina despues de pesarse." > <img src="imagenes/galeria/jordi-cris.jpg" alt="jordi acompañado a cristina despues de pesarse"> </a>
+
+        <a class="example-image-link" href="imagenes/galeria/ignasi-operacion.jpg" data-lightbox="ignasi-operacion" data-title="Ignasi despidiendose de sus padres antes de su cirugia." > <img  src="imagenes/galeria/ignasi-operacion.jpg" alt="ignasi despidiendose de sus padres antes de su cirujia"> </a>
+
+
+        <a class="example-image-link" href="imagenes/galeria/lleo-roger.jpg" data-lightbox="lleo-roger" data-title="Lleo y Roger apostando para poder comprar su protesis soñada." > <img  src="imagenes/galeria/lleo-roger.jpg" alt="lleo y roger apostando para comprar su protesis soñada"> </a>
+
+
+        <a class="example-image-link" href="imagenes/galeria/lleo-y-cristina.jpg" data-lightbox="lleo-y-cristina" data-title="Cristina bailando con Lleo por su cumpleaños." >  <img  src="imagenes/galeria/lleo-y-cristina.jpg" alt="cristina bailando con lleo por su cumpleños"> </a>
+
+
+        <a class="example-image-link" href="imagenes/galeria/pulseras-mural.jpg" data-lightbox="pulseras-mural" data-title="Mural de los Pulseras Rojas para destacar en el hospital." > <img  src="imagenes/galeria/pulseras-mural.jpg" alt="mural de los pulseras para destacar en el hospital"> </a>
+
+        <a class="example-image-link" href="imagenes/galeria/pulseras-juego.jpg" data-lightbox="pulseras-juego" data-title="Los pulseras jugando a donde les gustaria estar." > <img  src="imagenes/galeria/pulseras-juego.jpg " alt="los pulseras jugando a donde les gustaria estar"> </a>
+
+        <a class="example-image-link" href="imagenes/galeria/pre-viaje.jpg" data-lightbox="pre-viaje" data-title="Los pulseras saliendo del hospital para viajar juntos." > <img src="imagenes/galeria/pre-viaje.jpg" alt="los pulseras saliendo del hospital para viajar juntos"> </a>
+
+        <a class="example-image-link" href="imagenes/galeria/pulseras-camioneta.jpg" data-lightbox="pulseras-camioneta" data-title="Los pulseras despertando de una noche de fiesta juntos." > <img  src="imagenes/galeria/pulseras-camioneta.jpg" alt="los pulseras despertandose de una noche de fiesta juntos"> </a>
+
+
+        <a class="example-image-link" href="imagenes/galeria/pulseras-viaje.jpg" data-lightbox="pulseras-viaje" data-title="Los pulseras acompañandoa Lleo en el viaje que siempre quiso hacer." > <img  src="imagenes/galeria/pulseras-viaje.jpg" alt="los pulseras acompañando  a lleo en su viaje"> </a>
 
       </div>
     </article>
   </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -105,6 +114,19 @@
 
   </footer>
 
+ <script src="js/lightbox-plus-jquery.min.js"></script>
 
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu_bar");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
 </body>
+
+
 </html>

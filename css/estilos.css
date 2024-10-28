@@ -13,6 +13,7 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
+	max-width: 1300px;
 
 }
 
@@ -26,6 +27,7 @@ header{
 	display: flex;
 	justify-content: space-between;
 	min-height: 100px;
+
 	background-color: #ffcdd8;
 	align-items: center;
 	padding: 10px;
@@ -48,6 +50,20 @@ header{
 }
 
 
+h1{
+	text-align: center;
+	margin-top: 1.5em;
+	margin-bottom: 1.5rem;
+}
+
+.subtitulos{
+
+	margin-top: 1.5em;
+	margin-bottom: 1.5rem;
+}
+
+
+
 nav a{
 	font-weight: 600;
 	padding-right: 10px;
@@ -59,6 +75,7 @@ nav a{
 	display: flex;
 	justify-content: right;
 
+
 }
 
 
@@ -68,6 +85,7 @@ nav a{
 	padding: 20px 20px;
 	color: black;
 	text-decoration: none;
+
 	
 
 }
@@ -75,6 +93,7 @@ nav a{
 .encabezado li:hover{
 	background-color: #f1666d;
 	border-radius: 10px;
+
 
 }
 .encabezado-vertical{
@@ -104,8 +123,10 @@ nav a{
 }
 
 .portadaimg{
- width: 300px;
+ width: 400px;
  border-radius: 10px;
+ margin-left: 30px;
+ margin-bottom: 10px;
   }
 
 .principal{ 
@@ -140,26 +161,55 @@ nav a{
 	border-radius: 15%;
 	border-bottom-left-radius: 0% ;
 	border-bottom-right-radius: 0%;
+	padding-left: 315px;
+
 }
 
 .red{
 	width: 35px;
 	margin: 30px;
-	margin-left: 150px;
+	
+	max-width: 2.5rem;
+	margin-right: 1.5rem;
+	
+
 
 }
 article{
-	background-color: #fff;
+	background-color: #fff0f3;
 
 	margin-left: 150px;
 	margin-right: 150px;
 	border-radius: 15px;
 	padding: 15px 0px 15px 0px;
+	margin-bottom: 10%;
+	margin-top: 5%;
 }
 .libro{
 	width: 180px;
 	border-radius: 10px;
 }
+
+.musica{
+	width: 200px;
+	border-radius: 10px;
+}
+
+.autor{
+	width: 350px;
+	padding-left: 100px;
+}
+
+
+.biografia{
+	width: 200px;
+	border-radius: 10px;
+	margin-left: 120px;
+}
+
+
+
+
 
 .secundario div {
 	display: flex;
@@ -184,7 +234,8 @@ article{
 }
 
 h3{
-	padding-top: 20px;
+	padding-top: 5px;
+	margin-bottom: 1rem;
 }
 
 .tercero div p{
@@ -200,11 +251,13 @@ h3{
 }
 article div a img{
 	width: 300px;
+	height: 200px;
 	display: inline-flex;
-	margin-left: 190px;
-	padding-top: 15px;
-	border-radius: 10px;
-
+	margin-left: 30px;
+	padding: 10px;
+	
+	align-content: space-around;
+	border-radius: 15px;
 
 }
 
@@ -219,6 +272,7 @@ article div a img{
 	box-sizing:border-box;
 	font-family:'Montserrat',sans-serif;
 	font-size: 14px;
+
 	
 }
 
@@ -277,4 +331,139 @@ div.pie_contacto{
 
 div.pie_contacto span{
 	margin:0 5px 0 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px) { 
+header{
+
+	display: flex;
+	justify-content: space-around;
+	min-height: 100px;
+	background-color: #ffcdd8;
+	align-items: center;
+	padding: 10px;
+	position: sticky;
+	top: 0;
+	border-bottom: solid 1px #fff;
+	border-radius: 15%;
+	border-top-left-radius: 0% ;
+	border-top-right-radius: 0%;
+	z-index: 1;
+	flex-wrap: wrap;
+
+}
+header div, header a {
+	flex: 1 0 50%;
+}
+header nav {
+	flex-basis: 100%;
+}
+.icon {
+	display: block;
+	padding-right: 0.6rem;
+	text-align: right;
+}
+
+nav ul {
+	display: none;
+}
+nav.responsive ul {
+	display: block;
+}
+nav.responsive ul li {
+	display: block;
+	text-align: center;
+	padding: 0.5rem;
+}
+nav.responsive ul li a {
+	padding-right: 0;
+}
+
+
+.encabezado{
+	display: none;
+}
+
+.icon:hidden .encabezado-vertical{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section{
+	max-width: 480px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.principal{
+	height: 250px;
+	padding: 10%;
+}
+.secundario{
+	margin-top: 1%;
+	display: block;
+}
+.secundario div{
+	margin-right: auto;
+	margin-left: auto;
+	width: 90%;
+}
+.secundario div a img{
+	margin-bottom: 1rem;
+}
+h2{
+	font-size: 1rem;
+}
+h4{
+	font-size: 1rem;
+}
+footer{
+	height: 80px;
+	justify-content: space-evenly;
+}
+footer img{
+	max-width: 3rem;
+}
 }
